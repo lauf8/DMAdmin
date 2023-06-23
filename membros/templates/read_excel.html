@@ -1,0 +1,15 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="excel_file">
+    <input type="submit" value="Upload">
+</form>
+
+{% if error_message %}
+    <p>{{ error_message }}</p>
+{% endif %}
+
+{% if data %}
+    <table>
+        {{ data | safe }}
+    </table>
+{% endif %}

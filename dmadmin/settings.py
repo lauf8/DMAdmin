@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'organizacao',
     'helpers',
     'membros',
+    'reuniao',
 ]
 
 MIDDLEWARE = [

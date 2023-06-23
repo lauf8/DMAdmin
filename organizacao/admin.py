@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import Oficialaria, OficialExecutivo, MestreConselheiroEstadual, MestreConselheiroRegional, GrandeConscelho
-admin.site.register(OficialExecutivo)
-admin.site.register(MestreConselheiroEstadual)
-admin.site.register(GrandeConscelho)
+from .models import Castelo, Oficialaria,  Capitulo, Lideranca
 admin.site.register(Oficialaria)
-admin.site.register(MestreConselheiroRegional)
+admin.site.register(Lideranca)
+admin.site.register(Capitulo)
+admin.site.register(Castelo)
